@@ -112,7 +112,7 @@ public class MetricsDataGenerator {
 				String jsonOutString = jmapper.writeValueAsString(jsonOutPut);
 				System.out.println("Metrics Final JsonOutput : " + jsonOutString + "\n");
 
-				String apikey = "947d12f46dead405bf019033434f0cba";
+				String apikey = "947d12f46dead405bf019033434f0";
 
 				DataDogHttpTransport http = new DataDogHttpTransport(apikey, 5000, 5000, null, true);
 				http.prepare(jsonOutString);
